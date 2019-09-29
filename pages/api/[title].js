@@ -1,6 +1,7 @@
 import fetch from 'isomorphic-unfetch'
 
-const apiEndpoint = `https://omdbapi.com?apiKey=${process.env.OMDB_KEY}`
+//http://www.omdbapi.com/?t=order&apikey=fb6f848b
+const apiEndpoint = `http://omdbapi.com?apiKey=${process.env.OMDB_KEY}`
 const isDev = process.env.NODE_ENV !== 'production'
 
 export default async (req, res) => {
